@@ -8,7 +8,6 @@ public/            # everything that gets deployed
   privacy.html     # served at /privacy
   terms.html       # served at /terms
   404.html
-  app-ads.txt      # AdMob app-ads.txt (must stay at the domain root)
   assets/          # site.css, site.js, logo.svg
 firebase.json      # hosting config (clean URLs, headers, caching)
 .firebaserc        # Firebase project ID
@@ -42,5 +41,5 @@ Both need a repository secret named `FIREBASE_SERVICE_ACCOUNT` containing a serv
 ## GitHub Pages transition
 
 The root-level `index.html`, `privacy.html` and `terms.html` are redirect stubs that send old GitHub Pages
-visitors to the Firebase site, and the root `app-ads.txt` is a copy of `public/app-ads.txt`.
+visitors to the Firebase site.
 Once the App Store / Google Play listings point to the new URLs, GitHub Pages can be disabled and these root files deleted.
